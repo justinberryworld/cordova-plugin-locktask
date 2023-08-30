@@ -1,0 +1,24 @@
+{
+    "name": "cordova-plugin-locktaskmode",
+    "version": "0.0.1",
+    "description": "A Cordova plugin that provides access to Android’s screen pinning APIs.",
+    "cordova": {
+      "id": "cordova-plugin-locktaskmode",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/justinberryworld/cordova-plugin-locktask.git"
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "kiosk mode",
+      "lock task mode",
+      "screen pinning",
+      "android"
+    ],
+    "author": "Justin Poot",
+    "license": "MIT"
+  }

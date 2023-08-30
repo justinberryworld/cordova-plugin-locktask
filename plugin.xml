@@ -1,0 +1,15 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id=""
+        version="0.0.1">
+    <name>LockTaskMode</name>
+    <description>A Cordova plugin that exposes lock task task mode.</description>
+    <license>MIT</license>
+    <keywords>kiosk mode, lock task mode, screen pinning, android</keywords>
+    <js-module src="www/lock-task-mode.js" name="lock-task-mode">
+        <clobbers target="lockTaskMode" />
+    </js-module>
+    <engines>
+        <engine name="cordova" version=">=11.0.0" />
+    </engines>
+</plugin>
