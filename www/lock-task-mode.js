@@ -1,15 +1,14 @@
 
-var cordova = require('cordova');
+var exec = require('cordova/exec');
 
-/**
- * This represents the lock task mode.
- * @constructor
- */
-function LockTaskMode() {
-    greet = (name, successCallback, errorCallback) => {
-        cordova.exec(successCallback, errorCallback, "Hello", "greet", [name]);
-    }
+var lockTaskMode = function() {};
+
+lockTaskMode.setLockTaskEnabled = (successCallback, errorCallback) => {
+    exec(successCallback, errorCallback, "LockTaskMode", "setLockTaskEnabled");
 }
 
+lockTaskMode.setLockTaskPackages = (successCallback, errorCallback) => {
+    exec(successCallback, errorCallback, "LockTaskMode", "setLockTaskPackages");
+}
 
-module.exports = new LockTaskMode();
+module.exports = lockTaskMode;

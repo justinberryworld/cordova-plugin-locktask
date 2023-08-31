@@ -2,6 +2,7 @@
     "name": "cordova-plugin-locktaskmode",
     "version": "0.0.1",
     "description": "A Cordova plugin that provides access to Android’s screen pinning APIs.",
+    "main": "lock-task-mode.js",
     "cordova": {
       "id": "cordova-plugin-locktaskmode",
       "platforms": [

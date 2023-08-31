@@ -1,6 +1,6 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id=""
+        id="cordova-plugin-locktaskmode"
         version="0.0.1">
     <name>LockTaskMode</name>
     <description>A Cordova plugin that exposes lock task task mode.</description>
@@ -9,6 +9,16 @@
     <js-module src="www/lock-task-mode.js" name="lock-task-mode">
         <clobbers target="lockTaskMode" />
     </js-module>
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="LockTaskMode">
+            <param name="android-package" value="com.justinberryworld.plugins.LockTaskMode"/>
+          </feature>
+        </config-file>
+    
+        <source-file src="src/LockTaskMode.java" target-dir="src/com/justinberryworld/plugins"/>
+      </platform>
     <engines>
         <engine name="cordova" version=">=11.0.0" />
     </engines>
